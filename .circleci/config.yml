@@ -40,7 +40,9 @@ jobs:
    steps:
      - checkout
      - run: mkdir $FL_OUTPUT_DIR
-     - run: bundle install
+     - run: 
+          name: Bundle Install
+          command: bundle install --path .bundle
      - run:
          name: Fastlane
          command: bundle exec fastlane $FASTLANE_LANE
