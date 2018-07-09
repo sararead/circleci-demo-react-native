@@ -31,7 +31,7 @@ jobs:
 
   ios:
    macos:
-     xcode: '9.4'
+     xcode: '9.4.0'
    working_directory: /Users/distiller/project
    environment:
      FL_OUTPUT_DIR: /Users/distiller/project/output
@@ -58,10 +58,10 @@ workflows:
   version: 2
   node-android-ios:
     jobs:
-      - build
-      - android:
-          requires:
-            - build
-      - ios:
-          requires:
-            - build
+     # - build
+      #- android:
+       #   requires:
+        #    - build
+      - ios
+        #  requires:
+         #   - build
