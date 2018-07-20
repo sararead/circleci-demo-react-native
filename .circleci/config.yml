@@ -59,7 +59,7 @@ workflows:
   version: 2
   node-android-ios:
     jobs:
-     # - build
+      - build
       #- android:
        #   requires:
         #    - build
