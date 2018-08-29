@@ -1,5 +1,7 @@
 version: 2
 jobs:
+
+/**
   build:
     working_directory: ~/project
     docker:
@@ -28,10 +30,11 @@ jobs:
       - run: bundle exec fastlane test
       - store_test_results:
           path: ~/project/android/reports
+ **/
 
   ios:
    macos:
-     xcode: '9.4.0'
+     xcode: '9.5.0'
    working_directory: /Users/distiller/project
    environment:
      FL_OUTPUT_DIR: /Users/distiller/project/output
@@ -58,7 +61,7 @@ workflows:
   version: 2
   node-android-ios:
     jobs:
-      - build
+   #   - build
       #- android:
        #   requires:
         #    - build
