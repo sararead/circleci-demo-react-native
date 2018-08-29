@@ -1,7 +1,5 @@
 version: 2
 jobs:
-
-/**
   build:
     working_directory: ~/project
     docker:
@@ -30,7 +28,6 @@ jobs:
       - run: bundle exec fastlane test
       - store_test_results:
           path: ~/project/android/reports
- **/
 
   ios:
    macos:
