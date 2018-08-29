@@ -40,7 +40,7 @@ jobs:
    steps:
      - checkout
      - run: mkdir $FL_OUTPUT_DIR
-     - run: ls
+     - run: cd ios
      - run: 
           name: Bundle Install
           command: bundle install --path .bundle
