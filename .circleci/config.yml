@@ -42,9 +42,7 @@ jobs:
      - run: mkdir $FL_OUTPUT_DIR
      - run: 
           name: Bundle Install
-          command: |
-          cd ios
-          bundle install
+          command: cd ios && bundle install
      - run:
          name: Fastlane
          command: bundle exec fastlane $FASTLANE_LANE
