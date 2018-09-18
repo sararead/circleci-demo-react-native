@@ -31,7 +31,7 @@ jobs:
 
   ios:
    macos:
-     xcode: '10.0.0'
+     xcode: '10.0'
    working_directory: ~/project/ios
    environment:
      FL_OUTPUT_DIR: /Users/distiller/project/output
